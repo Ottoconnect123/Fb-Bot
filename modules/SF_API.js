@@ -22,7 +22,7 @@ var connection = nForceAuth.createConnection({
 	mode: 'single',
 	autoRefresh:true});
 
-connection.authenticate({ username: SFusername, password: SFpassword,environment:'production', securityToken: SFSecurityToken }, function(err,resp){
+connection.authenticate({ username: SFusername, password: SFpassword, securityToken: SFSecurityToken }, function(err,resp){
 	 if (err) {
          console.log("Authentication error - " + err);
      } else {
