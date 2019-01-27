@@ -18,6 +18,7 @@ var AccessToken = '';
 var connection = nForceAuth.createConnection({
 	clientId: SFclientId,
 	clientSecret: SFSecret,
+	environment:'production',
 	redirectUri: 'https://connect-123-bot.herokuapp.com/facebook',
 	mode: 'single',
 	autoRefresh:true});
