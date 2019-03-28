@@ -43,6 +43,7 @@ var setThecontactVisiblity = function(PSID,answer,account){
 		acc.set('Visible_to_Other_Interns__c', false);
 	}
 	acc.set('Id', account);
+	acc.set('Facebook_PSID__c', PSID);
 	
 	//acc.set('SLA__c', 'Gold');
 	return new Promise(function(resolve, reject){
