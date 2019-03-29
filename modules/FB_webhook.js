@@ -960,7 +960,7 @@ function processPostback(payload, sender, participant){
 					return;
 				}else if(cMessage.visible == false){
 					var updated ="";
-					console.log(sender+'###'+cMessage.accountId);
+					console.log(sender+'###'+cMessage.id);
 					SF.setThecontactVisiblity(sender, 'yes', cMessage.accountId).then(function(innerresults)
 					{
 						console.log('inner results '+innerresults);
