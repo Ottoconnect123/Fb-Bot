@@ -36,10 +36,10 @@ var setThecontactVisiblity = function(PSID,answer,account){
 	console.log('API line 36'+PSID+answer+account);
 	var acc = nForceAuth.createSObject('Account');
 	if(answer == 'yes'){
-		acc.set('Visible_to_Other_Interns__c', true);
+		acc.set('Visible_to_Other_Interns_c__pc', true);
 	}
 	else if(answer == 'no') {
-		acc.set('Visible_to_Other_Interns__c', false);
+		acc.set('Visible_to_Other_Interns_c__pc', false);
 	}
 	acc.set('Id', account);
 	acc.set('Facebook_PSID__c',PSID);
