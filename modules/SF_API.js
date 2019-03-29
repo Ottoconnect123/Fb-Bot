@@ -34,7 +34,7 @@ connection.authenticate({ username: SFusername, password: SFpassword, securityTo
 });
 var setThecontactVisiblity = function(PSID,answer,account){
 	
-	
+	console.log('@@'+PSID+answer+account);
 	var acc = nForceAuth.createSObject('Account');
 	if(answer == 'yes'){
 		acc.set('Visible_to_Other_Interns__c', true);
