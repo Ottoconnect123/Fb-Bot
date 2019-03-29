@@ -961,7 +961,7 @@ function processPostback(payload, sender, participant){
 				}else if(cMessage.visible == false){
 					var updated ="";
 					console.log(sender+'###'+cMessage.Id);
-					SF.setThecontactVisiblity(sender, 'yes', cMessage.accountId).then(function(innerresults)
+					SF.setThecontactVisiblity(sender, 'yes', cMessage.Id).then(function(innerresults)
 					{
 						console.log('inner results '+innerresults);
 						updated = ST.setTheAccountPrivate(innerresults);
