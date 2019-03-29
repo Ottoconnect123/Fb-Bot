@@ -950,7 +950,7 @@ function processPostback(payload, sender, participant){
 				console.log("BEFORE ST CALL"+results);	
 				cMessage = ST.formatAccountPrivate(results);
 				//botResponse({text:cMessage},sender);
-				console.log("formatted response is "+cMessage);
+				console.log("formatted response is 952"+cMessage.visible);
 				if(cMessage.visible == "none"){
 					botResponse( { text: 'Your data is missing. Please contact your program co-ordinator' }, sender);
 					return;
