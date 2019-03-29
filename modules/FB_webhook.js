@@ -992,7 +992,8 @@ function processPostback(payload, sender, participant){
 					return;
 				}else if(cMessage.visible == true){
 					var updated ="";
-					SF.setThecontactVisiblity(sender, 'no', cMessage.accountId).then(function(innerresults)
+					console.log(sender+'### line 995'+cMessage.Id);
+					SF.setThecontactVisiblity(sender, 'no', cMessage.Id).then(function(innerresults)
 					{
 						console.log('inner results '+innerresults);
 						updated = ST.setTheAccountPrivate(innerresults);
